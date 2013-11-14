@@ -14,6 +14,54 @@
         <link rel="stylesheet" type="text/css" href="package/Slider Codrops/css/component.css" />
         <!--iconos-->
         <script src="package/Slider Codrops/js/modernizr.custom.js"></script>
+        <style type="text/CSS">
+            article#cabeza
+            {
+                position: relative;
+                background-image:url('static/images/Portada-01.jpg');
+
+                -webkit-transition: all .8s ease-in-out;
+                -moz-transition: all .8s ease-in-out;
+                -o-transition: all .8s ease-in-out;
+                transition: all .8s ease-in-out;
+
+
+                background-size: cover;
+                background-position: center center;
+                background-attachment: fixed;
+
+                text-align: center;
+
+                cursor: default;
+            }/*
+            header
+            {
+                margin: 0 0 1em 0;
+            }*/
+
+
+            section.paginaprincipal article#cabeza
+            {
+                padding: 25em 0 25em 0; /*Tamaño que usara el el homepage*/
+            }
+            @media only screen and (min-width: 768px)
+            {
+                article#cabeza
+                {
+                    position: relative;
+                    background-image:url('static/images/Portada-02.jpg');
+
+
+                    background-size: cover;
+                    background-position: center center;
+                    background-attachment: fixed;
+
+                    text-align: center;
+
+                    cursor: default;
+                }
+            }
+        </style>
     </head>
 
     <body>   
@@ -37,6 +85,7 @@
                     name: 'Kitchen Sink',
                     version: '2.1.0222',
                     resources: [
+                        'static/sections/splach.html',
                         'static/sections/splash.html',
                         'static/sections/home.html',
                         'static/sections/buscador.html',

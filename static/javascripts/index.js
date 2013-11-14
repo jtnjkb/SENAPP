@@ -33,12 +33,18 @@ var Index = {//"http://appphp.esy.es/"
         $("button#goToMain").on("click", function() {
             Lungo.Router.section("searcher");
         });
+        $("section.paginaprincipal").on("click", Index.setTimeRedirect);
         $("a#goToMenu").on("click", Index.refreshReserves);
         $("section#detail  header nav a#goToMain").on("click", function() {
             Lungo.Router.section("searcher");
         });
         $("section#reserves").on("load", Index.paintReserves);
         $('#input').on("keyup", Index.searchKeyUp);     
+    },
+    setTimeRedirect: function(){
+        window.setTimeout(function(){
+            Lungo.Router.section("splash");
+        }, 4000)
     }, // Método para buscar en una lista de elemento cuando se excriba una letra
     searchKeyUp: function() {
         // get the value from text field

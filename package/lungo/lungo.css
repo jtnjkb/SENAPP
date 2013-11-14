@@ -146,7 +146,7 @@ footer nav.with-labels abbr{z-index:1;display:block !important;margin-top:-1.3em
 .layout > [data-layout=primary]{-webkit-box-flex:3;-moz-box-flex:3;-ms-box-flex:3;-o-box-flex:3;box-flex:3}
 [data-view-menu]:after{content:"▼";position:relative;top:-5px;left:1px;font-size:11px}
 [data-control=carousel]{overflow:hidden;list-style:none;margin:0}
-body > section > article.splash{text-align:center;padding:1.3333333333333333em;}
+body > section > article.splash{text-align:center;padding:1.3333333333333333em;background-image:url(../../Portada-2.jpg)}/*CAMBIAR FONDO SPLASH*/
 body > section > article.splash .logo{max-width:192px;margin:20% 0 7.5% 0;font-size:2.2em}
 body > section > article.splash .button,body > section > article.splash button{margin-bottom:.35555555555555557em}
 body > section > article.splash .copyright{position:absolute;width:100%;bottom:8px;left:0;font-size:11px;padding:0}
@@ -171,7 +171,7 @@ body > section > article > .empty > strong{font-size:1.2em;line-height:1.2em}
 body > section > article > .empty > small{font-size:.9em}
 body > section > article > .empty > button{margin:.5em 0}
 
-form label:not(.select),.form label:not(.select){display:inline-block;font-size:.9em;line-height:inherit;margin:.15em 0}
+form label:not(.select),.form label:not(.select){display:inline-block;font-size:.9em;line-height:inherit;margin:.10em 0}
 form input:not([type="checkbox"]),.form input:not([type="checkbox"]),form textarea,.form textarea,form select,.form select,form .progress,.form .progress,form label.select,.form label.select,form [data-control-progress],.form [data-control-progress]{font-size:1em;}
 form input:not([type="checkbox"]).large,.form input:not([type="checkbox"]).large,form textarea.large,.form textarea.large,form select.large,.form select.large,form .progress.large,.form .progress.large,form label.select.large,.form label.select.large,form [data-control-progress].large,.form [data-control-progress].large{font-size:1.2em}
 form input[type="text"],.form input[type="text"],form input[type="password"],.form input[type="password"],form input[type="date"],.form input[type="date"],form input[type="datetime"],.form input[type="datetime"],form input[type="email"],.form input[type="email"],form input[type="number"],.form input[type="number"],form input[type="search"],.form input[type="search"],form input[type="tel"],.form input[type="tel"],form input[type="time"],.form input[type="time"],form input[type="url"],.form input[type="url"],form select,.form select,form textarea,.form textarea,form label.select,.form label.select{display:inline-block;width:100%;margin:.5em 0;padding:0 .5em;-webkit-transition:all 100ms linear;-moz-transition:all 100ms linear;-ms-transition:all 100ms linear;-o-transition:all 100ms linear;transition:all 100ms linear;font-family:inherit;-webkit-appearance:none;-webkit-user-select:text;border:0;}

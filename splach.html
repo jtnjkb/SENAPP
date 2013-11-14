@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Splash</title>
+        <style type="text/CSS">
+
+
+            #header
+            {
+                position: relative;
+                background-image:url('static/images/Portada-01.jpg');
+
+                -webkit-transition: all .8s ease-in-out;
+                -moz-transition: all .8s ease-in-out;
+                -o-transition: all .8s ease-in-out;
+                transition: all .8s ease-in-out;
+
+
+                background-size: cover;
+                background-position: center center;
+                background-attachment: fixed;
+
+                text-align: center;
+
+                cursor: default;
+            }
+            header
+            {
+                margin: 0 0 1em 0;
+            }
+
+
+            .homepage #header
+            {
+                padding: 25em 0 25em 0; /*Tamaño que usara el el homepage*/
+            }
+
+
+            @media only screen and (min-width: 768px)
+            {
+                #header
+                {
+                    position: relative;
+                    background-image:url('static/images/Portada-02.jpg');
+
+
+                    background-size: cover;
+                    background-position: center center;
+                    background-attachment: fixed;
+
+                    text-align: center;
+
+                    cursor: default;
+
+                }
+
+
+            }
+
+
+
+        </style>
+
+        <script type="text/javascript">
+            window.onload = timeout;
+            function timeout() {
+                window.setTimeout("redirect()", 4000)
+            }
+
+            function redirect() {
+                window.location = "splash.html"
+                return
+            }
+        </script>
+
+    </head>
+
+    <body class="homepage" onload="timeout()">
+
+        <!-- Header -->
+        <div id="header">
+
+
+        </div>
+
+
+
+    </body>
+</html>
