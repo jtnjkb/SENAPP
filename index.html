@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SENA MOVIL</title> 
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="package/lungo/lungo.css">
+        <link rel="stylesheet" href="package/lungo/lungo.theme.css">
+        <link rel="stylesheet" href="package/lungo/lungo.icon.css">
+        <!-- App Stylesheet -->
+        <link rel="stylesheet" href="static/stylesheets/app.css">
+        <!--Estilos y demás para cursos -->
+        <link rel="stylesheet" type="text/css" href="package/Slider Codrops/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="package/Slider Codrops/css/component.css" />
+        <!--iconos-->
+        <script src="package/Slider Codrops/js/modernizr.custom.js"></script>
+    </head>
+
+    <body>   
+        <section>
+            <article>                
+            </article>
+        </section>
+        <!--AQUI ESTARÁN TODAS LAS PAGINAS-->
+        <!-- Lungo dependencies -->
+        <script src="components/quojs/quo.js"></script>
+        <script src="package/lungo/lungo.js"></script>
+        <script src="package/jquery/jquery-1.10.2.js"></script>
+        <!-- LungoJS - Sandbox App -->
+        <!--import de jquery-->
+
+        <!--Mi lógica de negocio-->
+        <!--<script src="package/cordova/cordova.js"></script>-->
+        <script>
+            (function() {
+                Lungo.init({
+                    name: 'Kitchen Sink',
+                    version: '2.1.0222',
+                    resources: [
+                        'static/sections/splash.html',
+                        'static/sections/buscador.html',
+                        'static/sections/buscador2.html',
+                        'static/sections/detalle.html',
+                        'static/sections/detalleEbook.html',
+                        'static/sections/reservas.html',
+                        'static/sections/librarySelector.html',
+                        'static/sections/mainCourses.html',
+                        'static/asides/menu.html',
+                        'static/asides/right.html',
+                        'static/sections/certificaciones.html',
+                        'static/sections/buscar_oferta22.html',
+                        'static/sections/NFC_Tecnicas/Auxiliar.html'],
+                    history: false
+                });
+            })();
+        </script>
+
+        <script src="static/javascripts/app.js"></script>
+        <script src="static/javascripts/index.js"></script>
+        <script src="package/Slider Codrops/js/jquery.cbpQTRotator.min.js"></script>
+        <!--SLIDER-->
+        <!--Mí lógica de negocio-->
+        <script>
+            (function($) {
+                $('div#cbp-qtrotator').cbpQTRotator();
+                Index.init();
+            })(jQuery);
+        </script>
+    </body>
+</html>

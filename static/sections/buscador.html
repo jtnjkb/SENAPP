@@ -1,0 +1,42 @@
+<!-- Biblioteca buscador-->
+<section id="searcher" data-transition="slide" class="drag">
+    <header data-title="BIBLIOTECA" >
+        <nav class="on-left">
+            <a href="#" data-view-section="librarySelector" data-icon="left-sign" class="button"></a>
+        </nav>
+    </header>          
+    <article id="main-article" class="list indenteds scroll">
+        <div class="form">
+            <fieldset >
+                <input type="search" id="txtWord" placeholder="Ingrese el libro para reservar ..."/>
+
+            </fieldset>
+            <div id="filterReserves" style="display: none;">
+                <!--
+                <span id="spnAuthor" style="border: solid #000 0.1em; margin: 0.2em;">Autor</span>
+                <span id="spnTitle" style="border: solid #000 0.1em; margin: 0.2em;">Título</span>
+                <span id="spnTopic" style="border: solid #000 0.1em; margin: 0.2em;">Tema</span>
+                <span id="spnAll" style="border: solid #000 0.1em; margin: 0.2em;">Todos</span>
+                //#70B22D verde sena
+                //#EB6E0D naranja sena
+                -->
+
+                <button id="btnAuthor"  class="button small" style="background-color: #70B22D !important; margin: 0.5em;">Autor</button>
+                <button id="btnTitle"  class="button small" style="background-color: #70B22D !important; margin: 0.5em;">Título</button>
+                <button id="btnTopic"  class="button small" style="background-color: #70B22D !important; margin: 0.5em;">Tema</button>
+                <button id="btnAll"  class="button small" style="background-color: #70B22D !important; margin: 0.5em;">Todos</button>
+            </div>
+            <button id="btnSearch" class="anchor"  >Buscar</button>
+        </div>
+
+        <!--
+        <input type="search" style="width:80%" id="txtWord" placeholder="Titulo o nombre de autor..."/>
+        <button id="btnSearch" data-icon="search" class="button"></button> -->
+        <article>
+            <ul id="booksList">
+               
+            </ul>
+        </article>
+    </article>
+</section> 
+

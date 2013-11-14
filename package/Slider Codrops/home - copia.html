@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Brownie - Lungo 2.2</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- iPhone -->
+    <link href="http://cdn.tapquo.com/lungo/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPhone (Retina) -->
+    <link href="http://cdn.tapquo.com/lungo/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 5 -->
+    <link href="http://cdn.tapquo.com/lungo/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPad -->
+    <link href="http://cdn.tapquo.com/lungo/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPad (Retina) -->
+    <link href="http://cdn.tapquo.com/lungo/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../package/lungo/lungo.css">
+    <link rel="stylesheet" href="../package/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="../package/lungo/lungo.icon.css">
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="static/stylesheets/app.css">
+    <!--css & js Slider-->
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+    <section id="main" data-transition="slide" data-aside="menu" class="drag">
+        <header>
+            <nav>
+                <a href="#" data-view-aside="menu" data-icon="menu"></a>
+            </nav>
+            <img src="static/images/logo.png" class="title centered">
+            <nav class="on-right">
+                <a href="#"  ><abbr class="text tiny ">Sena</abbr></a>
+            </nav>
+        </header>
+
+		<!--Artículo HOME--->
+        <article id="menu-principal" class="list indenteds scroll">
+           
+                <!--SLIDER-->
+                <div class="container">
+				<div class="main">
+				<div id="cbp-qtrotator" class="cbp-qtrotator">
+					<div class="cbp-qtcontent">
+						<img src="images/1.jpg" alt="img01" />
+						<blockquote>
+						  <p>People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
+						  <footer>Pino Caruso</footer>
+						</blockquote>
+					</div>
+					<div class="cbp-qtcontent">
+						<img src="images/2.jpg" alt="img02" />
+						<blockquote>
+						  <p>Nothing will benefit human health and increase the chances for survival of life on Earth as much as the evolution to a vegetarian diet.</p>
+						  <footer>Albert Einstein</footer>
+						</blockquote>
+					</div>
+					<div class="cbp-qtcontent">
+						<img src="images/3.jpg" alt="img03" />
+						<blockquote>
+						  <p>If you don't want to be beaten, imprisoned, mutilated, killed or tortured then you shouldn't condone such behaviour towards anyone, be they human or not.</p>
+						  <footer>Moby</footer>
+						</blockquote>
+					</div>
+					<div class="cbp-qtcontent">
+						<img src="images/4.jpg" alt="img04" />
+						<blockquote>
+						  <p>My body will not be a tomb for other creatures.</p>
+						  <footer>Leonardo Da Vinci</footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.cbpQTRotator.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpQTRotator( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 700,
+					// default transition easing
+					easing : 'ease',
+					// rotator interval (ms)
+					interval : 8000
+				}
+				- destroy:
+				$( selector ).cbpQTRotator( 'destroy' );
+				*/
+
+				$( '#cbp-qtrotator' ).cbpQTRotator();
+
+			} );
+		</script>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                 <ul>
+                <!--BOTON BUSCAR-->
+                
+                <li>
+                    <strong class="text bold">Armar el Menu (1) Paso</strong>
+                    <span class="text tiny">
+                       El Menu principal constituira el siguiente orden: <br> <br>
+                       ─Inicio (Home) <br>
+                       ─Buscar Ofertas <br>
+                       ─Certificación <br>
+                       ─Soporte y Ayuda <br>
+                       ─Salir
+                    </span>
+                </li>
+               <li class="anchor contrast">With colours</li>
+        <li class="accept">
+            <strong>&lt;li .accept&gt; + &lt;strong&gt; </strong>
+            <small>&lt;small&gt;</small>
+        </li>
+        <li class="cancel">
+            <strong>&lt;li .cancel&gt; + &lt;strong&gt; </strong>
+            <small>&lt;small&gt;</small>
+        </li>
+        <li class="warning">
+            <strong>&lt;li .warning&gt; + &lt;strong&gt; </strong>
+            <small>&lt;small&gt;</small>
+        </li>
+        <li class="color">
+            <strong>&lt;li .color&gt; + &lt;strong&gt; </strong>
+            <small>&lt;small&gt;</small>
+        </li>
+
+               
+               
+               
+                <li>
+                   
+                    <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flungo.tapquo.com%2F&text=@lungojs a framework for developers who want to design, build and share cross device apps" target="_blank" class="button theme" data-label="Tweet me"></a>
+
+                    <a href="http://lungo.tapquo.com" target="_blank" class="button margin-top secondary" data-label="Go to Project's page"></a>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Lungo dependencies -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="../package/lungo/lungo.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Kitchen Sink',
+            version: '2.1.0222',
+            resources: [
+                'static/asides/menu.html',
+                'static/asides/right.html',
+                'static/sections/certificaciones.html'],
+            history: false
+        });
+    </script>
+    <script src="static/javascripts/app.js"></script>
+</body>
+</html>
