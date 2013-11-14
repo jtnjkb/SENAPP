@@ -5,22 +5,8 @@ var Index = {//"http://appphp.esy.es/"
         Index.setListeners();
         // Existe el usuario del aplicativo?        
         var user = localStorage.getItem("myuser");
-        if (user !== undefined && user !== "" && user !== null)
+        if (user === undefined || user === "" || user === null)
         {
-            // Capturo la sección a llamar
-            var section = localStorage.getItem("destinySection");
-            if (section !== undefined && section !== "" && section !== null) {
-                if (section === "1") {
-                    Lungo.Router.section("librarySelector");
-                }
-                else if (section === "2") {
-                    Lungo.Router.section("main");
-                }
-            } else {
-                location = "helios/index.html";
-            }
-        }
-        else { // Si no está logueado vuelva al loguin
             Lungo.Router.section("splash");
         }
     },
@@ -52,10 +38,7 @@ var Index = {//"http://appphp.esy.es/"
             Lungo.Router.section("searcher");
         });
         $("section#reserves").on("load", Index.paintReserves);
-        $('#input').on("keyup", Index.searchKeyUp);
-        $("a#goToHelios").on("click", function() {
-            location = "helios/index.html";
-        });
+        $('#input').on("keyup", Index.searchKeyUp);     
     }, // Método para buscar en una lista de elemento cuando se excriba una letra
     searchKeyUp: function() {
         // get the value from text field
@@ -277,9 +260,7 @@ var Index = {//"http://appphp.esy.es/"
                 "p": password},
             "success": function(data) {
                 localStorage.setItem("myuser", data);
-                // location = "../../helios/home.html";
-                //location = Index.SERVER + "helios/home.html";
-                location = "helios/index.html";
+                 Lungo.Router.section("home");
 
             },
             "error": function(error) {
